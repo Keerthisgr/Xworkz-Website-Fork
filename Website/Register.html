@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xworkz</title>
+    <script src="register.js"></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navContainer {
+            background-color: rgb(11, 11, 11);
+            float: left;
+            width: 100%;
+            height: 70px;
+            /* margin-top: -10px; */
+            /* z-index: 100%; */
+        }
+
+        #nav1 {
+            width: 20%;
+        }
+
+        #nav2 {
+            color: white;
+            float: left;
+            width: 60%;
+            margin-left: 140px;
+            margin-top: -100px;
+        }
+
+        #nav2 li {
+            list-style: none;
+            float: left;
+            margin: 40px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+
+        }
+
+        #nav2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav2 li a:hover {
+            color: crimson;
+        }
+
+        #nav3 {
+            color: white;
+            float: left;
+            width: 20%;
+            margin-left: 70px;
+            margin-top: -78px;
+        }
+
+        #nav3 li {
+            list-style: none;
+            float: left;
+            margin: 10px 10px;
+        }
+
+        #nav3 img {
+            border-radius: 50%;
+        }
+
+        #foot li {
+            list-style: none;
+            float: left;
+            width: 50px;
+            border-radius: 50%;
+            margin-top: -50px;
+        }
+
+        footer {
+            height: 63vh;
+        }
+
+        .footMain img {
+            margin-left: 260px;
+            margin-top: 60px;
+        }
+
+        .footMain h2 {
+            margin-left: 290px;
+            /* margin-top:  60px; */
+        }
+
+        .footList ul {
+            margin-left: 650px;
+            margin-top: -40px;
+        }
+
+        .footList li {
+            list-style: none;
+            float: left;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+            /* margin-left: 90px; */
+            /* margin-top: -40px; */
+        }
+
+        .footList a {
+            text-decoration: none;
+            color: rgb(86, 85, 85);
+            margin-left: 20px;
+        }
+
+        .footList a:hover {
+            color: rgb(239, 53, 53);
+        }
+
+        .redColor {
+            color: red;
+        }
+
+        /* .divForm{
+        background: linear-gradient(to left, rgb(116, 116, 218), rgb(173, 90, 173));
+       } */
+        .newForm {
+            margin-bottom: 20px;
+            margin-left: 40px;
+            /* display: flex; */
+        }
+
+        .form1 {
+            display: flex;
+            /* margin-left: 200vh;
+     */
+        }
+
+        .mainForm {
+            margin-left: 450px;
+            /* padding-right: 80px; */
+        }
+        .subPart{
+            margin-top: 30px;
+            border: 4px solid rgb(227, 172, 45);
+            border-radius: 10px;
+            margin-right: 430px;
+            margin-bottom: 40px;
+
+        }
+        .subPart li{
+            color: red;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 5px;
+        }
+        .mainForm input{
+            height: 20px;
+            border: 2px solid rgb(44, 130, 164);
+            border-radius: 5px;
+        }
+    </style>
+
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navContainer">
+            <div id="nav1">
+                <a href="front.html"><img src="logo.png" alt="logo" height="70px"
+                        width="140px"></a>
+            </div>
+            <div id="nav2">
+                <ul>
+                    <li
+                        style="border: 2px solid none; border-radius: 30px; padding: 7px; margin-top: 32px; background-color: rgb(233, 81, 21);">
+                        <a href="Register.html">
+                        </a>REGISTER</li>
+                    <li><a href="front.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="softwares.html">SOFTWARE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="directions.html">DIRECTIONS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="questions.html">INTERVIEW QUESTION</a></li>
+                </ul>
+            </div>
+            <div id="nav3">
+                <ul>
+                    <li><a href="https://www.facebook.com/xworkzdevelopmentcenter/"><img src="facebook.png" alt="logo"
+                                height="28px" width="30px"></a></li>
+                    <li><a href="https://x.com/workz_x"><img src="twitter.jpeg" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.instagram.com/xworkzraj/"><img src="instagram.png" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/x-workz-odc/"><img src="linked.png" alt="logo"
+                                height="30px" width="30px"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="divForm">
+        <h1
+            style="text-align: center;border: 1px solid black; margin-left: 580px; margin-right: 580px; background-color: rgb(230, 157, 69); color: white; border-radius: 40px;">
+            Register</h1>
+        <div class="mainForm" style="border: 1px rgb(216, 213, 213);">
+            <form name="formName" onsubmit="return validation()">
+                <div class="form1">
+                    <div class="newForm" style="margin-left: -30px; margin-right: 60px;">
+                        <lable for="nameId">Enter Full Name</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="nameId" name="nameName" placeholder="Enter full name">
+                    </div>
+                    <div class="newForm">
+                        <lable for="emailId">Enter Contact Number</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="tel" id="emailId" name="nameName" placeholder="Enter number">
+                    </div>
+                </div>
+                <div class="form1">
+                    <div class="newForm" style="margin-left: -30px;">
+                        <lable for="whatsNo">Enter WhatsApp Number</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="tel" id="whatsNo" name="nameName" placeholder="Enter whatsapp number">
+                    </div>
+                    <div class="newForm">
+                        <lable for="usn">Enter USN/Roll No.</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="usn" name="mailName" placeholder="Enter USN">
+                    </div>
+                </div>
+                <div class="form1">
+                    <div class="newForm" style="margin-left: -30px; margin-right: 90px;">
+                        <lable for="email">Enter Email</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="email" id="email" name="nameName">
+                    </div>
+                    <div class="newForm">
+                        <lable for="quali">Qualification</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="quali" name="mailName">
+                    </div>
+                </div>
+                <div class="form1">
+                    <div class="newForm" style="margin-left: -30px; margin-right: 120px;">
+                        <lable for="stream">Stream</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="stream" name="nameName">
+                    </div>
+                    <div class="newForm">
+                        <lable for="clg">College Name</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="clg" name="mailName">
+                    </div>
+                </div>
+                <div class="form1">
+                    <div class="newForm" style="margin-left: -30px; margin-right: 140px;">
+                        <lable for="yop">YOP</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="date" id="yop" name="nameName">
+                    </div>
+                    <div class="newForm">
+                        <lable for="offer">Offered As</lable>
+                        <span class="redColor">*</span>
+                        <span>:</span>
+                        <input type="text" id="offer" name="mailName">
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" value="Submit"
+                        style="margin-left: 280px; border: 1px solid; padding-left: 20px; padding-right: 20px; background-color: darkgoldenrod; color: white; padding-top: 10px; padding-bottom: 10px; border-radius: 20%;">Register</button>
+                </div>
+            </form>
+            <div class="subPart">
+                <ol>
+                    <li>CSR is applicable only for 2024 YOP students.</li>
+                    <li>Enquiries are requested to enter your full Name and Reachable contact Number.</li>
+                    <li>Candidates are requested to select “Others” if your college name is not mentioned in the list</li>
+                    <li style="list-style: none; color: green;">Feel free to contact 9886971480 or 9845958884 for any queries</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
+    <h3 style="text-align: center; padding:10px;margin-right:480px;margin-left: 480px; border:1px solid; border-radius: 20px; color:aliceblue; background-color: darkgoldenrod;">REGISTER HERE</h3>
+    <input type="text" placeholder="Enter full name" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 200px;">
+    <input type="text" placeholder="Enter contact number" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 100px;">
+    <input type="text" placeholder="Enter whatsapp number" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 200px; margin-top: 20px;">
+    <input type="text" placeholder="Enter emailid" style="background-color:rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 100px; margin-top: 60px;">
+    <input type="text" placeholder="Enter USN" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none;  margin-top:60px;margin-left: 200px;">
+    <input type="text" placeholder="Qualification" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 100px;">
+    <input type="text" placeholder="stream" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 200px; margin-top: 20px;">
+    <input type="text" placeholder="College name" style="background-color:rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 100px; margin-top: 60px;">
+    <input type="text" placeholder="Year of passout" style="background-color: rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 200px; margin-top: 20px;">
+    <input type="text" placeholder="Offeres As" style="background-color:rgb(228, 227, 227); width: 450px; height: 45px; border: none; margin-left: 100px; margin-top: 60px;">
+    <br>
+    <br><br>
+    <h3 style="text-align: center; padding:10px;margin-right:580px;margin-left: 580px; border:1px solid; border-radius: 20px; color:aliceblue; background-color: rgb(221, 108, 43);">REGISTER</h3>
+    
+    <input type="text" placeholder="Your message here..." style="background-color: rgb(228, 227, 227); width: 1210px; height: 125px; border: none;margin-left: 60px;margin-bottom: 40px; margin-top: 30px;">
+  </div> -->
+    <footer style="background-color: black;">
+        <div class="footMain">
+            <img src="logo.png" alt="logo" width="220px" height="120px">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Follow us</h2>
+            <div id="foot">
+                <ul>
+                    <li><a href="https://www.facebook.com/xworkzdevelopmentcenter/"><img src="facebook.png" alt="logo"
+                                height="28px" width="30px"></a></li>
+                    <li><a href="https://x.com/workz_x"><img src="twitter.jpeg" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.instagram.com/xworkzraj/"><img src="instagram.png" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/x-workz-odc/"><img src="linked.png" alt="logo"
+                                height="30px" width="30px"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h2 style="color: white;margin-top: -160px; margin-left: 1150px;"> Subscribe</h2>
+            <h3 style="color: rgb(114, 113, 113); margin-top: -10px; margin-left: 1150px;">Don’t miss to subscribe to
+                our new feeds, kindly fill the form below.</h3>
+            <input type="text" placeholder="Email Address"
+                style="margin-left: 156vh; padding:10px; background-color: rgb(48, 48, 48); color: rgb(127, 124, 124);">
+        </div>
+        <div class="footList">
+            <h4 style="text-align: center; color: rgb(77, 76, 76); margin-top: 25vh; margin-right: 80vh;">Copyright ©
+                2022, All Right Reserved</h4>
+            <ul>
+                <li><a href="front.html">HOME</a></li>
+                <li><a href="aboutUs.html">ABOUT</a></li>
+                <li><a href="softwares.html">SOFTWARE</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="directions.html">DIRECTIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

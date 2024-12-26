@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xworkz</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .navContainer {
+            background-color: rgb(11, 11, 11);
+            float: left;
+            width: 100%;
+            height: 70px;
+            z-index: 100%;
+        }
+
+        #nav1 {
+            width: 20%;
+        }
+
+        #nav2 {
+            color: white;
+            float: left;
+            width: 60%;
+            margin-left: 140px;
+            margin-top: -100px;
+        }
+
+        #nav2 li {
+            list-style: none;
+            float: left;
+            margin: 40px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+
+        }
+
+        #nav2 li a:hover {
+            color: crimson;
+        }
+        #nav2 a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #nav3 {
+            color: white;
+            float: left;
+            width: 20%;
+            margin-left: 70px;
+            margin-top: -78px;
+        }
+
+        #nav3 li {
+            list-style: none;
+            float: left;
+            margin: 10px 10px;
+        }
+
+        #nav3 img {
+            border-radius: 50%;
+        }
+
+        .marq {
+            /* padding-top: 80px; */
+            padding-bottom: 30px;
+        }
+
+        .marque {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(211, 9, 9);
+            padding-bottom: 80px;
+        }
+
+        .homePart {
+            float: left;
+            width: 100%;
+        }
+
+        #content {
+            margin-left: 220px;
+        }
+
+        #content h1 {
+            color: rgb(68, 67, 67);
+            font-size: 40px;
+        }
+
+        #image {
+            margin-left: 800px;
+            margin-top: -450px;
+        }
+
+        .sec1 {
+            height: 30px;
+        }
+
+        .sec1 h1 {
+            text-align: center;
+        }
+
+        #sec12 ul {
+            list-style: none;
+            /* float: left; */
+        }
+
+        #sec12 li {
+            margin-left: 90px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .sec2 h1 {
+            margin-top: 600px;
+            text-align: center;
+        }
+
+        .sec2 {
+            height: 80vh;
+        }
+
+        .sec2 p {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* margin-left: 450px;
+            margin-right: 450px; */
+            /* text-align: center; */
+        }
+
+        .sec2 h2 {
+            margin-left: 110vh;
+            margin-right: 140px;
+            text-align: left;
+            color: rgb(60, 60, 60);
+            margin-top: -360px;
+        }
+
+        .pTag {
+            margin-left: 110vh;
+            margin-right: 180px;
+            text-align: left;
+            font-size: 10px;
+        }
+        .row1{
+            /* float: left; */
+            display: flex;
+            /* margin-left: 150px; */
+            justify-content: center;
+            padding-left: 100px;
+            /* border: 1px solid; */
+            margin-bottom: -30px;
+        }
+        .row1 img{
+            margin-left: 150px;
+        }
+        .row2{
+            display: flex;
+            justify-content: center;
+            /* padding: 300px; */
+        }
+        .row2 img{
+            margin-left: 150px;
+        }
+        .row3{
+            display: flex;
+            justify-content: center;
+            padding-left: 100px;
+            margin-top: -30px;
+        }
+        .row3 img{
+            margin-left: 150px;
+            margin-top: -20px;
+        }
+        #cyan{
+            border-top: 4px solid cyan;
+            border-style:groove;
+            /* margin-left: 100px; */
+            margin-right: 100px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgb(243, 243, 238);
+        }
+        #red{
+            border-top: 4px solid red;
+            border-style:groove;
+            border-radius: 10px;
+            margin-right: 350px;
+            padding: 20px;
+            background-color: rgb(243, 243, 238);
+        }
+        #blue{
+            border-top: 4px solid blue;
+            border-style:groove;
+            border-radius: 10px;
+            /* margin-right: 90px; */
+            padding: 20px;
+            background-color: rgb(243, 243, 238);
+
+        }
+        #orange{
+            border-top: 4px solid orange;
+            border-radius: 10px;
+            border-style:groove;
+            margin-right: 100px;
+            padding: 20px;
+            background-color: rgb(243, 243, 238);
+        }
+        .team h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        #foot li{
+            list-style: none;
+            float: left;
+            width: 50px;
+            border-radius: 50%;
+            margin-top: -50px;
+        }
+        footer{
+            height: 63vh;
+        }
+        .footMain img{
+            margin-left: 260px;
+            margin-top:  60px; 
+        }
+        .footMain h2{
+            margin-left: 290px;
+            /* margin-top:  60px; */
+        }
+        .footList ul{
+            margin-left: 650px;
+            margin-top: -40px;
+        }
+        .footList li{
+            list-style: none;
+            float: left;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+            /* margin-left: 90px; */
+            /* margin-top: -40px; */
+        }
+        .footList a{
+            text-decoration: none;
+            color: rgb(86, 85, 85);
+            margin-left: 20px;
+        }
+        .footList a:hover{
+            color: rgb(239, 53, 53);
+        }
+
+        /* .whatsapp{
+            background-color: brown;
+
+        } */
+        .whatsapp img{
+           border: solid 5px white;
+           background-color: white;
+           border-radius: 50px;
+           position: fixed;
+           bottom: 0;
+           right: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navContainer">
+            <div id="nav1">
+                <a href="front.html"><img src="logo.png" alt="logo" height="70px"
+                        width="140px"></a>
+            </div>
+            <div id="nav2">
+                <ul>
+                    <li style="border: 2px solid none; border-radius: 30px; padding: 7px; margin-top: 32px; background-color: rgb(233, 81, 21);">
+                    <a href="Register.html">    REGISTER</a></li>
+                    <li><a href="front.html">HOME</a></li>
+                    <li><a href="aboutUs.html">ABOUT</a></li>
+                    <li><a href="softwares.html">SOFTWARE</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="directions.html">DIRECTIONS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="questions.html">INTERVIEW QUESTION</a></li>
+                </ul>
+            </div>
+            <div id="nav3">
+                <ul>
+                    <li><a href="https://www.facebook.com/xworkzdevelopmentcenter/"><img src="facebook.png" alt="logo"
+                                height="28px" width="30px"></a></li>
+                    <li><a href="https://x.com/workz_x"><img src="twitter.jpeg" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.instagram.com/xworkzraj/"><img src="instagram.png" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/x-workz-odc/"><img src="linked.png" alt="logo"
+                                height="30px" width="30px"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+    <!-- <img src="whats.jpeg" alt="image" height="50px" width="50px" style="border-radius: 50%; margin: left=170vh;"> -->
+    <!-- <img src="whats.jpeg" alt="image" height="50px" width="50px" style="border-radius: 50%; margin-left: 150vh; margin-bottom: 179px; position: fixed;"> -->
+
+
+    </div>
+    <marquee class="marq" bgcolor="white" direction="left" loop="">
+        <div class="marque">
+            Free Java class for 1 Month only for any Gradutes from any stream! Registration for both offline and
+            online classes HURRY UP!!
+        </div>
+    </marquee>
+    <div class="homePart">
+        <div id="content">
+            <h1>WE ARE</h1>
+            <h1 style="color: rgb(220, 45, 45);">EXPERIENCED_</h1>
+            <h1 style="color: rgb(220, 45, 45);">TRAINERS_</h1>
+            <h3 style="color: rgb(79, 76, 76);  font-size:x-large;">Click here to enroll for CSR-2024</h3>
+           <a href="Register.html" style="text-decoration: none; color: aliceblue;"> <p
+                style="border: 1px solid rgb(246, 182, 21); padding: 10px; margin-right: 1190px; background-color: rgb(236, 159, 16); border-radius: 40px;">
+                Enroll Now</p></a>
+        </div>
+        <div id="image">
+            <img src="home.png" alt="img" height="550px" width="550px">
+        </div>
+    </div>
+    <!-- <img src="whats.jpeg" alt="image" height="50px" width="5opx"> -->
+    
+    <div class="sec1">
+        <h1>We <span style="color: rgb(235, 60, 60);">Teach</span></h1>
+        <div id="sec12">
+            <ul>
+                <li><img src="java.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="spring.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="MySQL.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="Angular.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="JS.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="HTML.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="CSS.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="GIT.png" alt="logo" height="60px" width="60px"></li>
+                <li><img src="Hibernate.png" alt="logo" height="60px" width="60px"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sec2" style="background-color: rgb(246, 244, 243);">
+        <h1>About<span style="color: rgb(235, 60, 60);">Us</span></h1>
+        <p style="margin-left: 450px; margin-right: 450px;">We are professionals from IT industry, having vast
+            experience in development
+            and training of JAVA and various UI related technologies.</p>
+        <img src="photo.jpeg" alt="image" width="520px" height="350px" style="border-radius: 10px; margin-left: 200px;">
+        <h2>Enterprise Application Expertise Team</h2>
+        <p class="pTag">We have been training and placing students over a decade now in various training institutes, we
+            are the
+            pioneers who introduced different training models which not only focus on theory but on practical
+            implementations.</p>
+        <p class="pTag">We focus on providing quality training on cutting edge technologies that are used to build
+            softwares in the
+            current world.</p>
+        <p class="pTag">Our alumni are our pride and joy. They have gone on to achieve remarkable success in the tech
+            industry,
+            holding key positions in renowned companies and contributing to groundbreaking projects. Their achievements
+            stand as a testament to the quality of education and training we provide.</p>
+    </div>
+    <hr>
+    <details>
+        <summary style="margin-top: 15px; margin-bottom: 15px; ">Why Xworkz</summary>
+        <div class="insideContent">
+                <div class="row1">
+                    <div id="cyan">
+                        <h2>Guidance and <br>Placements</h2><img src="https://assets.codepen.io/2301174/icon-supervisor.svg"
+                            alt="img">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div id="red">
+                        <h2>Best Trainers</h2><img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="img">
+                    </div>
+                    <div id="blue">
+                        <h2>Technical Skills</h2><img src="https://assets.codepen.io/2301174/icon-calculator.svg"
+                            alt="img">
+                    </div>
+                    </div>
+                    <div class="row3">
+                    <div id="orange">
+                        <h2>Learn Application<br> Development</h2><img
+                            src="https://assets.codepen.io/2301174/icon-karma.svg" alt="img">
+                    </div>
+               </div>
+        </div>
+    </details>
+    <hr>
+    <details>
+        <summary style="margin-top: 15px; margin-bottom: 15px;">Team</summary>
+        <div>
+            <div class="team">
+                <h2>Our <span style="color: rgb(223, 54, 54);">Team</span></h2>
+            </div>
+        </div>
+    </details>
+    <hr>
+    <!-- <div id="imgWhat">
+    <img src="whats.jpeg" alt="image" height="50px" width="50px">
+</div> -->
+    <!-- <img src="whats.jpeg" alt="image" height="50px" width="5opx" style="border-radius: 50%; margin-left: 150vh; margin-bottom: 179px; position: fixed;"> -->
+    <footer style="background-color: black;">
+        <div class="footMain">
+            <img src="logo.png" alt="logo" width="220px" height="120px"> 
+            <h2 style="font-family: Arial, Helvetica, sans-serif; color: white;">Follow us</h2>
+             <div id="foot">
+                <ul>
+                    <li><a href="https://www.facebook.com/xworkzdevelopmentcenter/"><img src="facebook.png" alt="logo"
+                                height="28px" width="30px"></a></li>
+                    <li><a href="https://x.com/workz_x"><img src="twitter.jpeg" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.instagram.com/xworkzraj/"><img src="instagram.png" alt="logo" height="30px"
+                                width="30px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/x-workz-odc/"><img src="linked.png" alt="logo"
+                                height="30px" width="30px"></a></li>
+                </ul>
+                </div>
+        </div>
+        <div>
+            <h2 style="color: white;margin-top: -160px; margin-left: 1150px;"> Subscribe</h2>
+            <h3 style="color: rgb(114, 113, 113); margin-top: -10px; margin-left: 1150px;">Don’t miss to subscribe to our new feeds, kindly fill the form below.</h3>
+            <input type="text" placeholder="Email Address" style="margin-left: 156vh; padding:10px; background-color: rgb(48, 48, 48); color: rgb(127, 124, 124);" >
+            <!-- <button type="submit"><i class="fab fa-telegram-plane"></i></button> -->
+        </div>
+        <div class="footList">
+            <h4 style="text-align: center; color: rgb(77, 76, 76); margin-top: 25vh; margin-right: 80vh;">Copyright © 2022, All Right Reserved</h4>
+            <ul>
+                <li><a href="front.html">HOME</a></li>
+                <li><a href="aboutUs.html">ABOUT</a></li>
+                <li><a href="softwares.html">SOFTWARE</a></li>
+                <li><a href="courses.html">COURSES</a></li>
+                <li><a href="directions.html">DIRECTIONS</a></li>
+            </ul>
+        </div>
+    </footer>
+   <div class="whatsapp">
+    <img src="whatsapp-48.png" alt="whatsapp">
+   </div>
+</body>
+
+</html>
